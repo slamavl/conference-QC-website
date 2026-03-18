@@ -27,7 +27,7 @@
         <a href="#schedule" class="hover:text-indigo-400">Schedule</a>
         <a href="#venue" class="hover:text-indigo-400">Venue</a>
         <a href="#board" class="hover:text-indigo-400">Board</a>
-        <a href="#register" class="bg-indigo-400 text-white px-4 py-2 rounded-xl">Register</a>
+        <a href="registration.html" class="bg-indigo-400 text-white px-4 py-2 rounded-xl">Register</a>
       </nav>
     </div>
   </header>
@@ -37,19 +37,22 @@
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-10 text-center md:text-left">
       <!-- Logo -->
       <div class="flex-shrink-0">
-        <img src="Fox_logo2.png" alt="Conference Logo" class="w-32 h-32 md:w-40 md:h-40 object-contain drop-shadow-xl mx-auto" />
+        <img src="Fox_logo2.png" alt="Conference Logo" class="w-40 h-40 md:w-50 md:h-50 object-contain drop-shadow-xl mx-auto" />
       </div>
 
       <!-- Text Content -->
       <div>
         <h2 class="text-4xl md:text-5xl font-bold mb-6">AMPAC 2026</h2>
-        <p class="text-lg max-w-2xl mb-6">
+        <p class="text-xl max-w-2xl mb-2">
           Annual Meeting on current Problems and Advances in theoretical Chemistry 2026
+        </p>
+         <p class="text-3xl max-w-5xl mb-2">
+          3-4 September
         </p>
 
         <div class="flex justify-center md:justify-start gap-4">
-          <button class="bg-white text-indigo-700 px-6 py-3 rounded-2xl font-semibold">Submit Abstract</button>
-          <button class="border border-white px-6 py-3 rounded-2xl">Register</button>
+          <button onclick="window.location.href='abstract.html'" class="bg-white text-indigo-700 px-6 py-3 rounded-2xl font-semibold">Submit Abstract</button>
+          <button onclick="window.location.href='registration.html'" class="border border-white px-6 py-3 rounded-2xl">Register</button>
         </div>
       </div>
     </div>
@@ -58,7 +61,13 @@
   <!-- About -->
   <section id="about" class="max-w-5xl mx-auto py-16 px-6">
     <h3 class="text-3xl font-semibold mb-4">About the Event</h3>
-    <p>This conference gathers young prespective researchers working at the forefront of quantum chemistry, electronic structure theory, and computational methods with single goal; to push the boundaries of current teoretical chemistry approaches. Topics include strongly correlated systems, excited states, density functional theory, and molecular dynamics with application on both biologic and artificial molecular and solid state systems.</p>
+    <!-- p>This conference gathers young prespective researchers working at the forefront of quantum chemistry, electronic structure theory, and computational methods with single goal; to push the boundaries of current teoretical chemistry approaches. Topics include strongly correlated systems, excited states, density functional theory, and molecular dynamics with application on both biologic and artificial molecular and solid state systems.
+Main goal of the meeting is not to present research updates but to discuss broader topics, problems and ideas which are relevant for broader audience in your field. The conference is focused more on the discussion over the topic rather than presentation itself, with brainstorming over possible solutions or possible impact of the proposed ideas. The speakers are strongly encouraged to present the topic in understandable way for broader comunity to receive featback from all the attendies. The main aim is to help each other and provide background for safe discussion of new ideas. The discussions with broader scientific comunity can lead to new more competetive grant proposals or directing the main research focus in the field. 
+Discussions over teaching, propagation and evaluation of the science are also encouraged, however the main aim of the conference is in brainstorming and open discussion over the scientific topics.</p -->
+   <p>This conference brings together early-career researchers working at the forefront of quantum chemistry, electronic structure theory, and computational methods, united by a common goal: to push the boundaries of modern theoretical chemistry. The scope spans topics such as strongly correlated systems, excited states, density functional theory, and molecular dynamics, with applications ranging from biological molecules to artificial materials and solid-state systems.</p>
+<p>Unlike traditional conferences, the primary aim of this meeting is not to present incremental research updates, but to stimulate in-depth discussions on broader challenges, emerging ideas, and conceptual advances relevant to the field. The focus is on open dialogue, critical thinking, and collaborative exploration, brainstorming and collectively examine potential solutions and future directions. Speakers are strongly encouraged to present their topics in a clear and accessible manner, making them approachable to a broad audience and enabling meaningful feedback from all participants. The conference aims to create a supportive and safe environment for sharing new ideas and refining concepts through discussions with the wider community.
+<p>By promoting open exchange and interdisciplinary discussion, the meeting seeks help with the development of stronger and more competitive research proposals, to inspire innovative research directions and stimulate new collaborations. In addition, discussions on teaching, communication, and evaluation of science are welcome, though the central focus remains on scientific exchange, idea generation, and collaborative problem-solving. 
+   </p>
   </section>
 
   <!-- Speakers -->
@@ -102,24 +111,24 @@
     <div class="max-w-6xl mx-auto">
       <h3 class="text-3xl font-semibold mb-8 text-center">Venue</h3>
 
-      <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div class="grid md:grid-cols-2 gap-10 items-stretch mb-8 ">
         <!-- University Photo -->
-        <div>
+        <div class="h-full">
           <!-- Replace with actual university image -->
-          <img src="university.jpg" alt="University Venue" class="rounded-2xl shadow-lg w-full h-80 object-cover" />
+          <img src="University.jpg" alt="University Venue" class="rounded-2xl shadow-lg w-full h-full object-cover" />
         </div>
 
         <!-- Map + Info -->
         <div class="space-y-6">
           <div>
-            <h4 class="text-xl font-bold">University of Example</h4>
-            <p class="text-slate-400">Department of Chemistry<br/>City, Country</p>
+            <h4 class="text-xl font-bold">Charles University</h4>
+            <p class="text-slate-400">Institute of Physics<br/>Ke Karlovu 5, Prague<br/> Czech Republic</p>
           </div>
 
           <!-- Embedded Map -->
           <div class="w-full h-64 rounded-2xl overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps/place/Ke+Karlovu+2026%2F5,+120+00+Nov%C3%A9+M%C4%9Bsto,+%C4%8Cesko/@50.070213,14.427909,17z/data=!4m6!3m5!1s0x470b948a1cb49e4d:0xed2e9584a001af7f!8m2!3d50.0701855!4d14.428204!16s%2Fg%2F11cslxdjqn?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D&output=embed"
+              src="https://www.google.com/maps?q=Ke+Karlovu+5,+Praha,+Czech+Republic&output=embed"
               class="w-full h-full border-0"
               allowfullscreen=""
               loading="lazy">
@@ -127,6 +136,8 @@
           </div>
         </div>
       </div>
+      <p>For the first year the of the conference the accomodation is arranged by the local organizer in the personal house with shared rooms. The other option is
+renting a private hotel room. For this option you can contact the organizers for the recommendations.</p>
     </div>
   </section>
 
